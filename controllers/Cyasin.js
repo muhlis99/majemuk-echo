@@ -5,7 +5,7 @@ module.exports = {
         await Myasin.findAll()
             .then(result => {
                 res.status(200).json({
-                    message: "Data Semester Ditemukan",
+                    message: "Data yasin Ditemukan",
                     data: result
                 })
             })
