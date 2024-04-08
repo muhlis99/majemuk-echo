@@ -1,3 +1,4 @@
+const { text } = require('body-parser')
 const db = require('../config/database.js')
 const { Sequelize, INTEGER, TEXT } = require('sequelize')
 
@@ -9,11 +10,9 @@ const Myasin =  db.define("Myasin",{
         primaryKey: true
     },
     'surah' : {
-        type : TEXT
+        'type' : TEXT
     },
     'ayat': {
-        type: TEXT,
-    },'roksu_ayat': {
         type: TEXT,
     },
     'des': {

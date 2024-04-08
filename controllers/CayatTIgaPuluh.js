@@ -1,13 +1,11 @@
-const Myasin =  require("../models/Myasin.js")
+const MayatTigaPuluh =  require("../models/MayatTigaPuluh.js")
 
 module.exports = {
     getAll :  async (req, res, next) => {
-        const judul =  await Myasin.findOne()
-        await Myasin.findAll()
+        await MayatTigaPuluh.findAll()
             .then(result => {
                 res.status(200).json({
-                    message: "Data yasin Ditemukan",
-                    judul : judul.surah,
+                    message: "Data ayat tiga puluh Ditemukan",
                     data: result
                 })
             })

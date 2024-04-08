@@ -15,10 +15,12 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 //  ROUTE 
 const yasin =  require('./routes/Ryasin.js')
+const ayatTigaPuluh =  require('./routes/RayatTigaPuluh.js')
 
 
 // AND POINT
 app.use('/v1/yasin', yasin)
+app.use('/v1/ayatTigaPuluh', ayatTigaPuluh)
 
 
 app.get('/', (req, res) => {
